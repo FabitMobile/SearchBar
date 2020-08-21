@@ -1,0 +1,11 @@
+sources:
+  - ./SearchBar/
+templates:
+  - Carthage/Checkouts/FataMorgana/Template/Mock.stencil
+output: 
+  ./SearchBar/mocks/generated/
+args:
+  # testableModule: "SearchBar"
+  # imports: "import CommonData\nimport CommonServices"
+  returnEmptyArray: false
+  returnEmptyDict: false
