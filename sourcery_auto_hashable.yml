@@ -1,7 +1,0 @@
-sources:
-  - ./SearchBar/
-templates:
-  - AutoHashable.stencil
-output: 
-  ./SearchBar/
-args:

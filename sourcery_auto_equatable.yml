@@ -1,7 +1,0 @@
-sources:
-  - ./SearchBar/
-templates:
-  - AutoEquatable.stencil
-output: 
-  ./SearchBar/
-args:

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0843D4810E06165CD53BDEA6 /* AutoEquatable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973FD8183E9673808A6A4CAA /* AutoEquatable.generated.swift */; };
-		3FCFFB1FED2B8F1884DE49A4 /* AutoHashable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F30FD9C2B6F04D02089AAB /* AutoHashable.generated.swift */; };
 		3FDE745C725F9260C639A097 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB2C0B6447BA13748E8AB31 /* SearchBar.swift */; };
 		BC954C1F12EFE621E60E3F41 /* UITextFieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C1376AEB644B0CE84BE9CF /* UITextFieldExt.swift */; };
 /* End PBXBuildFile section */
@@ -16,9 +14,7 @@
 /* Begin PBXFileReference section */
 		61E1206074907AA38883B0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D7E7D2B70D3B06B4307D6EB /* SearchBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SearchBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		973FD8183E9673808A6A4CAA /* AutoEquatable.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoEquatable.generated.swift; sourceTree = "<group>"; };
 		B9C1376AEB644B0CE84BE9CF /* UITextFieldExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExt.swift; sourceTree = "<group>"; };
-		E3F30FD9C2B6F04D02089AAB /* AutoHashable.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoHashable.generated.swift; sourceTree = "<group>"; };
 		EDB2C0B6447BA13748E8AB31 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -26,8 +22,6 @@
 		161389C4BD3352BC9B741215 /* SearchBar */ = {
 			isa = PBXGroup;
 			children = (
-				973FD8183E9673808A6A4CAA /* AutoEquatable.generated.swift */,
-				E3F30FD9C2B6F04D02089AAB /* AutoHashable.generated.swift */,
 				61E1206074907AA38883B0CE /* Info.plist */,
 				EDB2C0B6447BA13748E8AB31 /* SearchBar.swift */,
 				B9C1376AEB644B0CE84BE9CF /* UITextFieldExt.swift */,
@@ -58,9 +52,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66068CD26C75DB85AD351DFD /* Build configuration list for PBXNativeTarget "SearchBar" */;
 			buildPhases = (
-				2C0BF38FCC73D76CE5C10553 /* Run Script. Generate Equtables */,
-				ADDF9FDFE1B273697E4D0D94 /* Run Script. Generate Hashable */,
-				B15944F5120DAFE434C426C1 /* Run Script. Generate Mock */,
 				87368D5032C6D3C26D00290B /* Sources */,
 			);
 			buildRules = (
@@ -90,6 +81,7 @@
 			developmentRegion = ru;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				ru,
 				en,
 			);
 			mainGroup = 35C4EA3F0F7B86F6A31E9D53;
@@ -101,70 +93,11 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		2C0BF38FCC73D76CE5C10553 /* Run Script. Generate Equtables */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script. Generate Equtables";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sourcery --disableCache --config \"${SRCROOT}/sourcery_auto_equatable.yml\"";
-		};
-		ADDF9FDFE1B273697E4D0D94 /* Run Script. Generate Hashable */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script. Generate Hashable";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sourcery --disableCache --config \"${SRCROOT}/sourcery_auto_hashable.yml\"";
-		};
-		B15944F5120DAFE434C426C1 /* Run Script. Generate Mock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script. Generate Mock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sourcery --disableCache --config \"${SRCROOT}/sourcery_mocks.yml\"";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		87368D5032C6D3C26D00290B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0843D4810E06165CD53BDEA6 /* AutoEquatable.generated.swift in Sources */,
-				3FCFFB1FED2B8F1884DE49A4 /* AutoHashable.generated.swift in Sources */,
 				3FDE745C725F9260C639A097 /* SearchBar.swift in Sources */,
 				BC954C1F12EFE621E60E3F41 /* UITextFieldExt.swift in Sources */,
 			);
