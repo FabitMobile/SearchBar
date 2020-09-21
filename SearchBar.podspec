@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SearchBar'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'search bar ui component'
   s.homepage         = 'https://github.com/FabitMobile/SearchBar.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
