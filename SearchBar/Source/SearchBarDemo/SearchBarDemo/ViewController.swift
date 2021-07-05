@@ -21,6 +21,7 @@ class SearchBarViewController: UIViewController, SearchBarDelegate {
         searchBar.textField.spellCheckingType = .no
         searchBar.textField.autocorrectionType = .no
 
+        view.backgroundColor = .white
         let bnRightItem = UIBarButtonItem(title: "Поиск",
                                           style: .plain,
                                           target: self,
