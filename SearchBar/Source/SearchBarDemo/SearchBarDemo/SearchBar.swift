@@ -136,10 +136,10 @@ open class SearchBar: UIView, UITextFieldDelegate {
         let views = ["textField": textField]
 
         //
-        let widthConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:[newView(100)]",
-                                                              options: NSLayoutConstraint.FormatOptions(rawValue: 0),
-                                                              metrics: nil,
-                                                              views: views)
+//        let widthConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:[newView(100)]",
+//                                                              options: NSLayoutConstraint.FormatOptions(rawValue: 0),
+//                                                              metrics: nil,
+//                                                              views: views)
         //let widthConstraint = newView.widthAnchor.constraint(equalToConstant: 100)
 
         
@@ -193,48 +193,56 @@ open class SearchBar: UIView, UITextFieldDelegate {
     }
 
     func setupDecorationViewConstraints() {
-        var views: [String: Any] = [:]
-        views["decorationView"] = decorationView
-        views["placeholderLabel"] = placeholderLabel
-        views["imageView"] = imageView
-
-        let decorationContentHorizontalFormat = "H:|-[imageView]-[placeholderLabel]-|"
-        let decorationContentImageVerticalFormat = "V:[imageView(<=30)]"
-        let decorationVerticalFormat = "V:|-0-[decorationView]-0-|"
-        let decorationContentPlaceholderVerticalFormat = "V:|-0-[placeholderLabel]-0-|"
+//        var views: [String: Any] = [:]
+//        views["decorationView"] = decorationView
+//        views["placeholderLabel"] = placeholderLabel
+//        views["imageView"] = imageView
+//
+//        let decorationContentHorizontalFormat = "H:|-[imageView]-[placeholderLabel]-|"
+//        let decorationContentImageVerticalFormat = "V:[imageView(<=30)]"
+//        let decorationVerticalFormat = "V:|-0-[decorationView]-0-|"
+//        let decorationContentPlaceholderVerticalFormat = "V:|-0-[placeholderLabel]-0-|"
         
         textField.centerXAnchor.constraint(equalTo: decorationView.centerXAnchor).isActive = true
         textField.leftAnchor.constraint(equalTo: decorationView.leftAnchor).isActive = false
         decorationView.centerYAnchor.constraint(equalTo: imageView.centerYAnchor).isActive = true
+        
+        imageView.leftAnchor.constraint(equalTo: decorationView.leftAnchor).isActive = true
+        imageView.trailingAnchor.constraint(equalTo: placeholderLabel.leadingAnchor).isActive = true
+        imageView.heightAnchor.constraint(lessThanOrEqualToConstant: 30).isActive = true
+        decorationView.topAnchor.constraint(equalTo: textField.topAnchor).isActive = true
+        decorationView.bottomAnchor.constraint(equalTo: textField.bottomAnchor).isActive = true
+        placeholderLabel.topAnchor.constraint(equalTo: decorationView.topAnchor).isActive = true
+        placeholderLabel.bottomAnchor.constraint(equalTo: decorationView.bottomAnchor).isActive = true
 
-        let decorationVerticalConstraints = NSLayoutConstraint
-            .constraints(withVisualFormat: decorationVerticalFormat,
-                         options: [],
-                         metrics: nil,
-                         views: views)
+//        let decorationVerticalConstraints = NSLayoutConstraint
+//            .constraints(withVisualFormat: decorationVerticalFormat,
+//                         options: [],
+//                         metrics: nil,
+//                         views: views)
+//
+//        let decorationContentPlaceholderVerticalConstraints = NSLayoutConstraint
+//            .constraints(withVisualFormat: decorationContentPlaceholderVerticalFormat,
+//                         options: [],
+//                         metrics: nil,
+//                         views: views)
+//
+//        let decorationContentImageVerticalConstraints = NSLayoutConstraint
+//            .constraints(withVisualFormat: decorationContentImageVerticalFormat,
+//                         options: .alignAllCenterY,
+//                         metrics: nil,
+//                         views: views)
+//
+//        let decorationContentHorizontalConstraints = NSLayoutConstraint
+//            .constraints(withVisualFormat: decorationContentHorizontalFormat,
+//                         options: [],
+//                         metrics: nil,
+//                         views: views)
 
-        let decorationContentPlaceholderVerticalConstraints = NSLayoutConstraint
-            .constraints(withVisualFormat: decorationContentPlaceholderVerticalFormat,
-                         options: [],
-                         metrics: nil,
-                         views: views)
-
-        let decorationContentImageVerticalConstraints = NSLayoutConstraint
-            .constraints(withVisualFormat: decorationContentImageVerticalFormat,
-                         options: .alignAllCenterY,
-                         metrics: nil,
-                         views: views)
-
-        let decorationContentHorizontalConstraints = NSLayoutConstraint
-            .constraints(withVisualFormat: decorationContentHorizontalFormat,
-                         options: [],
-                         metrics: nil,
-                         views: views)
-
-        NSLayoutConstraint.activate(decorationVerticalConstraints +
-            decorationContentPlaceholderVerticalConstraints +
-            decorationContentHorizontalConstraints +
-            decorationContentImageVerticalConstraints)
+//        NSLayoutConstraint.activate(decorationVerticalConstraints +
+//            decorationContentPlaceholderVerticalConstraints +
+//            decorationContentHorizontalConstraints +
+//            decorationContentImageVerticalConstraints)
     }
 
     // MARK: - UITextFieldDelegate

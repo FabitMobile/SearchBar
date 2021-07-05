@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  SearchBarDemo
-//
-//  Created by Violetta Pavlenko on 05.07.2021.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

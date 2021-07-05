@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  SearchBarDemo
-//
-//  Created by Violetta Pavlenko on 05.07.2021.
-//
-
 import UIKit
 
 @main
