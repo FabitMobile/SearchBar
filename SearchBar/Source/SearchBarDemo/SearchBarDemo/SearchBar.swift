@@ -61,11 +61,12 @@ open class SearchBar: UIView, UITextFieldDelegate {
             if shouldDrawSearchBarImage {
                 imageView.image = searchBarImage
                 textField.setLeftPadding(kImageWidth)
-                decorationViewLeftAligmentConstraint.constant = 0
+                textField.leftAnchor.constraint(equalTo: decorationView.leftAnchor, constant: 0).isActive = true
             } else {
                 imageView.image = nil
                 textField.setLeftPadding(kTextFieldLeftInset)
-                decorationViewLeftAligmentConstraint.constant = kTextFieldLeftInset
+                textField.leftAnchor.constraint(equalTo: decorationView.leftAnchor, constant: kTextFieldLeftInset)
+                    .isActive = true
             }
             setNeedsLayout()
             layoutIfNeeded()
@@ -85,8 +86,6 @@ open class SearchBar: UIView, UITextFieldDelegate {
     // MARK: helpers
 
     var decorationView: UIView
-    var decorationViewCenterAligmentConstraint: NSLayoutConstraint!
-    var decorationViewLeftAligmentConstraint: NSLayoutConstraint!
 
     var inputText = ""
 
@@ -136,6 +135,14 @@ open class SearchBar: UIView, UITextFieldDelegate {
     func setupTextFieldConstraints() {
         let views = ["textField": textField]
 
+        //
+        let widthConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:[newView(100)]",
+                                                              options: NSLayoutConstraint.FormatOptions(rawValue: 0),
+                                                              metrics: nil,
+                                                              views: views)
+        //let widthConstraint = newView.widthAnchor.constraint(equalToConstant: 100)
+
+        
         let horizontalFormat = "H:|-\(textFieldInsets.left)-[textField]-\(textFieldInsets.right)-|"
         let verticalFormat = "V:|-\(textFieldInsets.top)-[textField]-\(textFieldInsets.bottom)-|"
 
@@ -143,6 +150,8 @@ open class SearchBar: UIView, UITextFieldDelegate {
                                                                   options: [],
                                                                   metrics: nil,
                                                                   views: views)
+        
+        
 
         let topBottomConstraints = NSLayoutConstraint.constraints(withVisualFormat: verticalFormat,
                                                                   options: [],
@@ -193,30 +202,10 @@ open class SearchBar: UIView, UITextFieldDelegate {
         let decorationContentImageVerticalFormat = "V:[imageView(<=30)]"
         let decorationVerticalFormat = "V:|-0-[decorationView]-0-|"
         let decorationContentPlaceholderVerticalFormat = "V:|-0-[placeholderLabel]-0-|"
-
-        decorationViewCenterAligmentConstraint = NSLayoutConstraint(item: textField,
-                                                                    attribute: .centerX,
-                                                                    relatedBy: .equal,
-                                                                    toItem: decorationView,
-                                                                    attribute: .centerX,
-                                                                    multiplier: 1,
-                                                                    constant: 0)
-
-        decorationViewLeftAligmentConstraint = NSLayoutConstraint(item: textField,
-                                                                  attribute: .left,
-                                                                  relatedBy: .equal,
-                                                                  toItem: decorationView,
-                                                                  attribute: .left,
-                                                                  multiplier: 1,
-                                                                  constant: 0)
-
-        let imageViewCenterYConstraint = NSLayoutConstraint(item: decorationView,
-                                                            attribute: .centerY,
-                                                            relatedBy: .equal,
-                                                            toItem: imageView,
-                                                            attribute: .centerY,
-                                                            multiplier: 1,
-                                                            constant: 0)
+        
+        textField.centerXAnchor.constraint(equalTo: decorationView.centerXAnchor).isActive = true
+        textField.leftAnchor.constraint(equalTo: decorationView.leftAnchor).isActive = false
+        decorationView.centerYAnchor.constraint(equalTo: imageView.centerYAnchor).isActive = true
 
         let decorationVerticalConstraints = NSLayoutConstraint
             .constraints(withVisualFormat: decorationVerticalFormat,
@@ -241,12 +230,6 @@ open class SearchBar: UIView, UITextFieldDelegate {
                          options: [],
                          metrics: nil,
                          views: views)
-
-        textField.addConstraint(decorationViewCenterAligmentConstraint)
-        textField.addConstraint(decorationViewLeftAligmentConstraint)
-
-        decorationView.addConstraint(imageViewCenterYConstraint)
-        decorationViewLeftAligmentConstraint.isActive = false
 
         NSLayoutConstraint.activate(decorationVerticalConstraints +
             decorationContentPlaceholderVerticalConstraints +
@@ -280,8 +263,8 @@ open class SearchBar: UIView, UITextFieldDelegate {
     // MARK: - Animation
 
     func editingStartAnimation() {
-        decorationViewLeftAligmentConstraint.isActive = true
-        decorationViewCenterAligmentConstraint.isActive = false
+        textField.centerXAnchor.constraint(equalTo: decorationView.centerXAnchor).isActive = true
+        textField.centerXAnchor.constraint(equalTo: decorationView.centerXAnchor).isActive = false
         UIView.animate(withDuration: 0.2) { [weak self] in
             guard let __self = self else { return }
             __self.textField.layoutIfNeeded()
@@ -289,8 +272,8 @@ open class SearchBar: UIView, UITextFieldDelegate {
     }
 
     func editingEndAnimation() {
-        decorationViewLeftAligmentConstraint.isActive = false
-        decorationViewCenterAligmentConstraint.isActive = true
+        textField.centerXAnchor.constraint(equalTo: decorationView.centerXAnchor).isActive = false
+        textField.centerXAnchor.constraint(equalTo: decorationView.centerXAnchor).isActive = true
         UIView.animate(withDuration: 0.2) { [weak self] in
             guard let __self = self else { return }
             __self.textField.layoutIfNeeded()
