@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3FDE745C725F9260C639A097 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB2C0B6447BA13748E8AB31 /* SearchBar.swift */; };
-		BC954C1F12EFE621E60E3F41 /* UITextFieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C1376AEB644B0CE84BE9CF /* UITextFieldExt.swift */; };
+		A232262826942F1C0020BF2B /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A232262626942F1C0020BF2B /* SearchBar.swift */; };
+		A232262926942F1C0020BF2B /* UITextFieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A232262726942F1C0020BF2B /* UITextFieldExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		61E1206074907AA38883B0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D7E7D2B70D3B06B4307D6EB /* SearchBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SearchBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9C1376AEB644B0CE84BE9CF /* UITextFieldExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExt.swift; sourceTree = "<group>"; };
-		EDB2C0B6447BA13748E8AB31 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		A232262626942F1C0020BF2B /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchBar.swift; path = SearchBar/Source/SearchBarDemo/SearchBarDemo/SearchBar.swift; sourceTree = "<group>"; };
+		A232262726942F1C0020BF2B /* UITextFieldExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITextFieldExt.swift; path = SearchBar/Source/SearchBarDemo/SearchBarDemo/UITextFieldExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -23,8 +23,6 @@
 			isa = PBXGroup;
 			children = (
 				61E1206074907AA38883B0CE /* Info.plist */,
-				EDB2C0B6447BA13748E8AB31 /* SearchBar.swift */,
-				B9C1376AEB644B0CE84BE9CF /* UITextFieldExt.swift */,
 			);
 			path = SearchBar;
 			sourceTree = "<group>";
@@ -32,6 +30,8 @@
 		35C4EA3F0F7B86F6A31E9D53 = {
 			isa = PBXGroup;
 			children = (
+				A232262626942F1C0020BF2B /* SearchBar.swift */,
+				A232262726942F1C0020BF2B /* UITextFieldExt.swift */,
 				161389C4BD3352BC9B741215 /* SearchBar */,
 				79B0D0ACEDB2CDDA85B2E47E /* Products */,
 			);
@@ -98,8 +98,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FDE745C725F9260C639A097 /* SearchBar.swift in Sources */,
-				BC954C1F12EFE621E60E3F41 /* UITextFieldExt.swift in Sources */,
+				A232262826942F1C0020BF2B /* SearchBar.swift in Sources */,
+				A232262926942F1C0020BF2B /* UITextFieldExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
