@@ -178,7 +178,7 @@ open class SearchBar: UIView, UITextFieldDelegate {
             .isActive = true
         textField.leftAnchor.constraint(equalTo: decorationView.leftAnchor)
             .isActive = true
-        decorationView.centerYAnchor.constraint(greaterThanOrEqualToSystemSpacingBelow:imageView.centerYAnchor, multiplier: 1.0)
+        decorationView.centerYAnchor.constraint(equalTo:imageView.centerYAnchor)
             .isActive = true
         
         imageView.leftAnchor.constraint(equalTo: decorationView.leftAnchor, constant: 8).isActive = true
