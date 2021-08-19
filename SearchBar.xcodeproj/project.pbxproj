@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A2BD1A1726C2AAEE008E69B8 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD1A1526C2AAEE008E69B8 /* SearchBar.swift */; };
-		A2BD1A1826C2AAEE008E69B8 /* UITextFieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD1A1626C2AAEE008E69B8 /* UITextFieldExt.swift */; };
+		A231414226CE6DC7000A8DB4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A231414026CE6DC7000A8DB4 /* SearchBar.swift */; };
+		A231414326CE6DC7000A8DB4 /* UITextFieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A231414126CE6DC7000A8DB4 /* UITextFieldExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8D7E7D2B70D3B06B4307D6EB /* SearchBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SearchBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A231414026CE6DC7000A8DB4 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchBar.swift; path = SearchBar/SearchBar.swift; sourceTree = "<group>"; };
+		A231414126CE6DC7000A8DB4 /* UITextFieldExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITextFieldExt.swift; path = SearchBar/UITextFieldExt.swift; sourceTree = "<group>"; };
 		A2BD1A1326C2AAE4008E69B8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SearchBar/Info.plist; sourceTree = "<group>"; };
-		A2BD1A1526C2AAEE008E69B8 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchBar.swift; path = SearchBar/Source/SearchBar.swift; sourceTree = "<group>"; };
-		A2BD1A1626C2AAEE008E69B8 /* UITextFieldExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITextFieldExt.swift; path = SearchBar/Source/UITextFieldExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -23,8 +23,8 @@
 			isa = PBXGroup;
 			children = (
 				A2BD1A1326C2AAE4008E69B8 /* Info.plist */,
-				A2BD1A1526C2AAEE008E69B8 /* SearchBar.swift */,
-				A2BD1A1626C2AAEE008E69B8 /* UITextFieldExt.swift */,
+				A231414026CE6DC7000A8DB4 /* SearchBar.swift */,
+				A231414126CE6DC7000A8DB4 /* UITextFieldExt.swift */,
 				79B0D0ACEDB2CDDA85B2E47E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,8 +91,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2BD1A1726C2AAEE008E69B8 /* SearchBar.swift in Sources */,
-				A2BD1A1826C2AAEE008E69B8 /* UITextFieldExt.swift in Sources */,
+				A231414226CE6DC7000A8DB4 /* SearchBar.swift in Sources */,
+				A231414326CE6DC7000A8DB4 /* UITextFieldExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

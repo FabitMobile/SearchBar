@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
   s.swift_version     = '5.2'
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'SearchBar/Source/**/*'
+  s.source_files = 'SearchBar/**/*'
 
 end
