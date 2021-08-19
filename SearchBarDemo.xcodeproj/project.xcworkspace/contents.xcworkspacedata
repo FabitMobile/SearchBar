@@ -2,7 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../SearchBar">
+      location = "group:/Users/lettapavlenko/Documents/SearchBar/SearchBar.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/lettapavlenko/Documents/SearchBar/UITextFieldExt.swift">
    </FileRef>
    <FileRef
       location = "self:">
