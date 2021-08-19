@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A231414226CE6DC7000A8DB4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A231414026CE6DC7000A8DB4 /* SearchBar.swift */; };
-		A231414326CE6DC7000A8DB4 /* UITextFieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A231414126CE6DC7000A8DB4 /* UITextFieldExt.swift */; };
+		A231414526CE71B1000A8DB4 /* UITextFieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A231414426CE71B1000A8DB4 /* UITextFieldExt.swift */; };
+		A231414726CE71B5000A8DB4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A231414626CE71B5000A8DB4 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8D7E7D2B70D3B06B4307D6EB /* SearchBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SearchBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A231414026CE6DC7000A8DB4 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchBar.swift; path = SearchBar/SearchBar.swift; sourceTree = "<group>"; };
-		A231414126CE6DC7000A8DB4 /* UITextFieldExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITextFieldExt.swift; path = SearchBar/UITextFieldExt.swift; sourceTree = "<group>"; };
+		A231414426CE71B1000A8DB4 /* UITextFieldExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExt.swift; sourceTree = "<group>"; };
+		A231414626CE71B5000A8DB4 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchBar.swift; path = /Users/lettapavlenko/Documents/SearchBar/SearchBar.swift; sourceTree = "<absolute>"; };
 		A2BD1A1326C2AAE4008E69B8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SearchBar/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -22,9 +22,9 @@
 		35C4EA3F0F7B86F6A31E9D53 = {
 			isa = PBXGroup;
 			children = (
+				A231414626CE71B5000A8DB4 /* SearchBar.swift */,
+				A231414426CE71B1000A8DB4 /* UITextFieldExt.swift */,
 				A2BD1A1326C2AAE4008E69B8 /* Info.plist */,
-				A231414026CE6DC7000A8DB4 /* SearchBar.swift */,
-				A231414126CE6DC7000A8DB4 /* UITextFieldExt.swift */,
 				79B0D0ACEDB2CDDA85B2E47E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,8 +91,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A231414226CE6DC7000A8DB4 /* SearchBar.swift in Sources */,
-				A231414326CE6DC7000A8DB4 /* UITextFieldExt.swift in Sources */,
+				A231414526CE71B1000A8DB4 /* UITextFieldExt.swift in Sources */,
+				A231414726CE71B5000A8DB4 /* SearchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

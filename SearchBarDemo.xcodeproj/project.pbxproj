@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A231413B26CE663A000A8DB4 /* UITextFieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A231413A26CE663A000A8DB4 /* UITextFieldExt.swift */; };
-		A231413D26CE663C000A8DB4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A231413C26CE663C000A8DB4 /* SearchBar.swift */; };
+		A231414A26CE7219000A8DB4 /* UITextFieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A231414826CE7219000A8DB4 /* UITextFieldExt.swift */; };
+		A231414B26CE7219000A8DB4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A231414926CE7219000A8DB4 /* SearchBar.swift */; };
 		A2BD1A4026C2C1B6008E69B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2BD1A3926C2C1B6008E69B8 /* Assets.xcassets */; };
 		A2BD1A4126C2C1B6008E69B8 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A2BD1A3A26C2C1B6008E69B8 /* Base.lproj */; };
 		A2BD1A4226C2C1B6008E69B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD1A3B26C2C1B6008E69B8 /* AppDelegate.swift */; };
@@ -17,8 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A231413A26CE663A000A8DB4 /* UITextFieldExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UITextFieldExt.swift; path = /Users/lettapavlenko/Documents/SearchBar/UITextFieldExt.swift; sourceTree = "<absolute>"; };
-		A231413C26CE663C000A8DB4 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchBar.swift; path = /Users/lettapavlenko/Documents/SearchBar/SearchBar.swift; sourceTree = "<absolute>"; };
+		A231414826CE7219000A8DB4 /* UITextFieldExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITextFieldExt.swift; path = SearchBar/Source/UITextFieldExt.swift; sourceTree = "<group>"; };
+		A231414926CE7219000A8DB4 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchBar.swift; path = SearchBar/Source/SearchBar.swift; sourceTree = "<group>"; };
 		A27205F826931B9C0012C424 /* SearchBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2BD1A3926C2C1B6008E69B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = SearchBar/Assets.xcassets; sourceTree = "<group>"; };
 		A2BD1A3A26C2C1B6008E69B8 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Base.lproj; path = SearchBar/Base.lproj; sourceTree = "<group>"; };
@@ -46,8 +46,8 @@
 				A2BD1A3926C2C1B6008E69B8 /* Assets.xcassets */,
 				A2BD1A3A26C2C1B6008E69B8 /* Base.lproj */,
 				A2BD1A4626C2C246008E69B8 /* Info.plist */,
-				A231413A26CE663A000A8DB4 /* UITextFieldExt.swift */,
-				A231413C26CE663C000A8DB4 /* SearchBar.swift */,
+				A231414926CE7219000A8DB4 /* SearchBar.swift */,
+				A231414826CE7219000A8DB4 /* UITextFieldExt.swift */,
 				A2BD1A3E26C2C1B6008E69B8 /* SceneDelegate.swift */,
 				A2BD1A3C26C2C1B6008E69B8 /* ViewController.swift */,
 				A27205F926931B9C0012C424 /* Products */,
@@ -132,11 +132,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A231414B26CE7219000A8DB4 /* SearchBar.swift in Sources */,
 				A2BD1A4326C2C1B6008E69B8 /* ViewController.swift in Sources */,
 				A2BD1A4226C2C1B6008E69B8 /* AppDelegate.swift in Sources */,
-				A231413D26CE663C000A8DB4 /* SearchBar.swift in Sources */,
+				A231414A26CE7219000A8DB4 /* UITextFieldExt.swift in Sources */,
 				A2BD1A4526C2C1B6008E69B8 /* SceneDelegate.swift in Sources */,
-				A231413B26CE663A000A8DB4 /* UITextFieldExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
