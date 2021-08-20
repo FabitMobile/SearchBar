@@ -7,32 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3FDE745C725F9260C639A097 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB2C0B6447BA13748E8AB31 /* SearchBar.swift */; };
-		BC954C1F12EFE621E60E3F41 /* UITextFieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C1376AEB644B0CE84BE9CF /* UITextFieldExt.swift */; };
+		A231414526CE71B1000A8DB4 /* UITextFieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A231414426CE71B1000A8DB4 /* UITextFieldExt.swift */; };
+		A231414726CE71B5000A8DB4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A231414626CE71B5000A8DB4 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		61E1206074907AA38883B0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D7E7D2B70D3B06B4307D6EB /* SearchBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SearchBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9C1376AEB644B0CE84BE9CF /* UITextFieldExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExt.swift; sourceTree = "<group>"; };
-		EDB2C0B6447BA13748E8AB31 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		A231414426CE71B1000A8DB4 /* UITextFieldExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExt.swift; sourceTree = "<group>"; };
+		A231414626CE71B5000A8DB4 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchBar.swift; path = /Users/lettapavlenko/Documents/SearchBar/SearchBar.swift; sourceTree = "<absolute>"; };
+		A2BD1A1326C2AAE4008E69B8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SearchBar/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		161389C4BD3352BC9B741215 /* SearchBar */ = {
-			isa = PBXGroup;
-			children = (
-				61E1206074907AA38883B0CE /* Info.plist */,
-				EDB2C0B6447BA13748E8AB31 /* SearchBar.swift */,
-				B9C1376AEB644B0CE84BE9CF /* UITextFieldExt.swift */,
-			);
-			path = SearchBar;
-			sourceTree = "<group>";
-		};
 		35C4EA3F0F7B86F6A31E9D53 = {
 			isa = PBXGroup;
 			children = (
-				161389C4BD3352BC9B741215 /* SearchBar */,
+				A231414626CE71B5000A8DB4 /* SearchBar.swift */,
+				A231414426CE71B1000A8DB4 /* UITextFieldExt.swift */,
+				A2BD1A1326C2AAE4008E69B8 /* Info.plist */,
 				79B0D0ACEDB2CDDA85B2E47E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +64,7 @@
 				LastUpgradeCheck = 1100;
 				TargetAttributes = {
 					E05EAA3616CFED4F6FF609BE = {
+						LastSwiftMigration = 1250;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -98,8 +91,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FDE745C725F9260C639A097 /* SearchBar.swift in Sources */,
-				BC954C1F12EFE621E60E3F41 /* UITextFieldExt.swift in Sources */,
+				A231414526CE71B1000A8DB4 /* UITextFieldExt.swift in Sources */,
+				A231414726CE71B5000A8DB4 /* SearchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +102,7 @@
 		0F09A6F6C7949C61AAB19718 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -117,7 +111,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = SearchBar/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SearchBar/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -127,6 +121,7 @@
 				PRODUCT_MODULE_NAME = SearchBar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -188,6 +183,7 @@
 		30D9D951ED70E3093E3D87A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -196,7 +192,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = SearchBar/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SearchBar/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -206,6 +202,8 @@
 				PRODUCT_MODULE_NAME = SearchBar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
